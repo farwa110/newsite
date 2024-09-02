@@ -1,0 +1,177 @@
+/* Styles for mobile screens (max-width: 700px) */
+@media (max-width: 700px) {
+}
+
+* {
+  background-color: whitesmoke;
+  padding: 5px;
+  margin: 5px;
+}
+
+h3 {
+  color: #443a3b;
+}
+
+h1 {
+  text-align: center;
+}
+/*et produkt fra Produktliste*/
+.kort {
+  border: 2px solid #333; /* Border color and thickness */
+  border-radius: 8px; /* Rounded corners */
+  padding: 16px; /* Space inside the box */
+  width: 300px; /* Fixed width */
+  text-align: center; /* Center text image and text */
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+img {
+  width: 172px;
+  height: auto;
+}
+/*side Produktliste*/
+.produktliste {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*produkt side*/
+.produktinformation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.kategori {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 4%;
+  gap: 10px;
+}
+
+.underkategori {
+  border-style: groove;
+  background-color: #d1dbe2;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.4rem;
+  gap: 30px;
+  overflow-x: auto;
+}
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #5e6b74;
+}
+a:hover {
+  color: #252d38;
+}
+
+.linkspåproduktside {
+  text-decoration: underline;
+}
+
+.produktoverskrift {
+  text-decoration: none;
+}
+
+.forsideoverskrift {
+  text-decoration: overline;
+  text-shadow: #252d38;
+  color: #5e6b74;
+}
+
+/*Menu*/
+
+#dropdown-menu .submenu {
+  display: none;
+}
+
+#dropdown-menu li:hover .submenu {
+  display: block;
+}
+
+#dropdown-menu {
+  border: 3px solid black;
+  display: flex;
+  list-style: none;
+  border-radius: 50px;
+  color: black;
+  font-family: "Poller One", serif;
+  font-size: 10px;
+}
+
+#dropdown-menu li {
+  transition: background-color 0.2s ease;
+  border-radius: 50px;
+}
+
+#dropdown-menu li:hover {
+  background-color: black;
+}
+
+.submenu {
+  color: black;
+  font-family: "Poller One", serif;
+  list-style: none;
+  font-size: 10px;
+}
+
+.saharateam {
+  text-align: left;
+}
+
+.accesorieslink {
+  color: black;
+  background-color: #d1dbe2;
+}
+
+.udsolgtbillede {
+  opacity: 0, 4;
+}
+
+.add-to-basket {
+  background-color: #28a745; /* Bootstrap success color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.sold-out {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.rabat {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 5px;
+  text-transform: uppercase;
+  background-color: #ff4757;
+  position: absolute;
+}
